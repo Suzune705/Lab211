@@ -3,10 +3,9 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/Lab211/Exception_Java/src/Main.java</file>
-            <file>file:/D:/Lab211/Exception_Java/src/InvalidNumberException.java</file>
-            <file>file:/D:/Lab211/Exception_Java/src/BubbleSort.java</file>
-            <file>file:/D:/Lab211/Exception_Java/src/Validate.java</file>
+            <file>file:/D:/Lab211/BubbleSort/src/BubbleSort.java</file>
+            <file>file:/D:/Lab211/BubbleSort/src/Validate.java</file>
+            <file>file:/D:/Lab211/BubbleSort/src/Main.java</file>
         </group>
     </open-files>
 </project-private>

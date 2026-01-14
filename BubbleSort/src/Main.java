@@ -8,13 +8,25 @@
  * @author hieuchu
  */
 public class Main {
-    public static void main(String[] args) {        
+
+    public static void main(String[] args) {
+
         BubbleSort bubbleSort = new BubbleSort();
-        System.out.println("Enter size : ");
-        int size = bubbleSort.EnterSize();
         
-        Validate.isPositiveNumber(size);
+        Validate validate = new Validate();
         
-        bubbleSort.GenerateArray(size);              
+        System.out.println("Enter number of array: ");
+
+        int size = validate.input();
+
+        bubbleSort.generateArray(size);
+        System.out.print("Unsorted array:");
+        
+        bubbleSort.displayArray();
+        System.out.println("");
+       
+        System.out.print("Sorted array:");
+        bubbleSort.sortArray();
+        bubbleSort.displayArray();
     }
 }
