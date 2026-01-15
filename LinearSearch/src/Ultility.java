@@ -35,15 +35,28 @@ public class Ultility {
     }
 
     /**
-     * to enter search number
+     * to enter search number and validate
      *
      * @return : number to be found
      */
     public int enterSearchNumber() {
         Scanner sc = new Scanner(System.in);
-        int number = sc.nextInt();
-        return number;
+        String number;
+        int converted;
+        while (true) {
+            try {
+                number = sc.nextLine();
+                isValidData(number);
+                converted = Integer.valueOf(number);
+                return converted;
+            } catch (InvalidNumberException | InputMismatchException | NumberFormatException e) {
+                System.out.println(e.getMessage());
+                System.out.println("Please try again !!");
+            }
+        }
     }
+    
+    
 
     /**
      * check data in the range 0 - 9 digit
